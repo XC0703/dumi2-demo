@@ -1,0 +1,31 @@
+.custom-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #00000073;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  z-index: 99;
+  .content-box {
+    max-height: 100vh;
+    padding: 50px;
+    .virtualList-close {
+      position: fixed;
+      top: 30px;
+      right: 100px;
+      font-size: 30px;
+      color: #fff;
+    }
+    .virtualList-container {
+      position: relative;
+      border: 1px solid #fff;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      background-color: #fff;
+    }
+  }
+}
